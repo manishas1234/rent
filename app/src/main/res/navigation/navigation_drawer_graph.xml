@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_graph"
+    app:startDestination="@id/newChecklistFragment2">
+
+    <fragment
+        android:id="@+id/newChecklistFragment2"
+        android:name="com.rentreadychecklist.fragments.NewChecklistFragment"
+        android:label="fragment_new_checklist"
+        tools:layout="@layout/fragment_new_checklist" >
+        <action
+            android:id="@+id/action_newChecklistFragment2_to_outsideFormFragment"
+            app:destination="@id/outsideFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/outsideFormFragment"
+        android:name="com.rentreadychecklist.fragments.OutsideFormFragment"
+        android:label="fragment_outside_form"
+        tools:layout="@layout/fragment_outside_form" >
+        <action
+            android:id="@+id/action_outsideFormFragment_to_frontDoorsFormFragment2"
+            app:destination="@id/frontDoorsFormFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/frontDoorsFormFragment2"
+        android:name="com.rentreadychecklist.fragments.FrontDoorsFormFragment"
+        android:label="fragment_front_doors_form"
+        tools:layout="@layout/fragment_front_doors_form" >
+        <action
+            android:id="@+id/action_frontDoorsFormFragment2_to_garageFormFragment"
+            app:destination="@id/garageFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/garageFormFragment"
+        android:name="com.rentreadychecklist.fragments.GarageFormFragment"
+        android:label="fragment_garage_form"
+        tools:layout="@layout/fragment_garage_form" >
+        <action
+            android:id="@+id/action_garageFormFragment_to_laundryRoomFormFragment"
+            app:destination="@id/laundryRoomFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laundryRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.LaundryRoomFormFragment"
+        android:label="fragment_laundry_room_form"
+        tools:layout="@layout/fragment_laundry_room_form" >
+        <action
+            android:id="@+id/action_laundryRoomFormFragment_to_livingRoomFormFragment"
+            app:destination="@id/livingRoomFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/livingRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.LivingRoomFormFragment"
+        android:label="fragment_living_room_form"
+        tools:layout="@layout/fragment_living_room_form" >
+        <action
+            android:id="@+id/action_livingRoomFormFragment_to_greatRoomFormFragment"
+            app:destination="@id/greatRoomFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greatRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.GreatRoomFormFragment"
+        android:label="fragment_greate_room_form"
+        tools:layout="@layout/fragment_greate_room_form" >
+        <action
+            android:id="@+id/action_greatRoomFormFragment_to_diningRoomFormFragment"
+            app:destination="@id/diningRoomFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diningRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.DiningRoomFormFragment"
+        android:label="fragment_dining_room_form"
+        tools:layout="@layout/fragment_dining_room_form" >
+        <action
+            android:id="@+id/action_diningRoomFormFragment_to_kitchenFormFragment"
+            app:destination="@id/kitchenFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitchenFormFragment"
+        android:name="com.rentreadychecklist.fragments.KitchenFormFragment"
+        android:label="fragment_kitchen_form"
+        tools:layout="@layout/fragment_kitchen_form" >
+        <action
+            android:id="@+id/action_kitchenFormFragment_to_miscellaneousFromFragment"
+            app:destination="@id/miscellaneousFromFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/miscellaneousFromFragment"
+        android:name="com.rentreadychecklist.fragments.MiscellaneousFromFragment"
+        android:label="fragment_miscellaneous_from"
+        tools:layout="@layout/fragment_miscellaneous_from" />
+</navigation>
